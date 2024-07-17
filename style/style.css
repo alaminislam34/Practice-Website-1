@@ -52,6 +52,7 @@ body{
 }
 .banner1-image{
     background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
 }
 .banner1-image img{
     margin: 30px 33px 30px 5px;
@@ -75,7 +76,32 @@ body{
     padding: 20px;
 }
 
+/* banner3 styles */
 
+
+.banner3{
+    width: 100%;
+    margin: 1rem 1rem;
+}
+.banner3-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: (100% - 1rem);
+    height: 100%;
+    align-items: center;
+    margin: 0 4rem;
+}
+.item{
+    height: auto;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .9rem;
+}
+.item img{
+    width: 100%;
+
+}
 
 
 
