@@ -98,11 +98,14 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .9rem;
 }
+.item .star i{
+    color: #FB8200;
+}
+
 .item img{
     width: 100%;
 
 }
-
 
 
 @media screen and (max-width: 576px) {
@@ -156,5 +159,49 @@ body{
     }
     .banner2 ul{
         margin: 0px;
+    }
+    .banner3{
+        margin: 0;
+        padding: 1rem;
+    }
+    .banner3 .banner3-items{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    .banner1, .banner2, .banner3{
+        width: 100%;
+        margin: (100% - 1rem);
+    }
+    .nav-item{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-item li a{
+        width: 50px;
+    }
+    .banner1{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .title{
+        display: none;
+    }
+    .banner2 ul {
+        margin: 1rem;
+
+    }
+    .banner2 ul img{
+        width: 100%;
+    }
+    .banner3-items{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 }
