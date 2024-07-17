@@ -101,6 +101,24 @@ body{
 .item .star i{
     color: #FB8200;
 }
+.btn{
+    justify-content: right;
+    text-align: right;
+    margin: 2rem 4rem;
+
+}
+.btn button{
+    padding: 1rem;
+    border: none;
+    background-color: #ffffff;
+}
+.btn a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #E02C6D;
+    padding: 1rem;
+    font-weight: bold;
+}
 
 .item img{
     width: 100%;
