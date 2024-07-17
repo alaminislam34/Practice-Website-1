@@ -25,19 +25,28 @@ body{
 }
 
 /* navbar styles */
-.title h3{
-    font-size: 1.6rem;
-}
 .nav-title{
+    height: 80px;
+    background: #2c3e50;
+    display: flex;
     justify-content: space-between;
-    margin: 60px 120px;
+    align-items: center;
+    padding: 2rem;
 }
-.nav-item{
+.nav-title ul{
+    display: flex;
+    gap: 2rem;
+}
+.title h3{
+    color: #ffffff;
+}
+nav ul, a{
     list-style: none;
-    gap: 40px;
+    color: #ffffff;
+    text-decoration: none;
 }
 .nav-item a{
-    text-decoration: none;
+    color: #ffffff;
 }
 /* banner1 styles */
 .banner1{
@@ -206,37 +215,46 @@ body{
         flex-direction: column;
         text-align: center;
     }
-    .title h3{
-        width: 100%;
-    }
-    nav{
+    nav .nav-item li{
         width: 100%;
     }
     .nav-item{
-        /* flex-direction: column; */
-        text-align: center;
-        text-align: left;
-        width: 100%;
-        gap: 10px;
-        justify-content: space-around;
-        /* margin: 2rem; */
+        flex-direction: row;
     }
     .nav-title{
-        margin: 2rem;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
     }
-    .nav-item li{
+    .nav-title ul{
+        gap: 15px;
+        width: 100%;
+    }
+    .nav-title ul li a {
         width: 100%;
     }
     .nav-item li a{
-        display: inline-block;
-        text-align: center;
-        align-items: center;
+        font-size: .75rem;
     }
-    .bay-website ul{
-        grid-template-columns: repeat(4, 1fr);
+    .nav-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6px;
+        margin: 0;
+        align-items: center;
+        padding: 1.5rem .4rem;
+    }
+    nav{
         width: 100%;
         align-items: center;
-        /* margin: 20px; */
+    }
+
+
+    /* banner styles */
+    .bay-website ul{
+        width: 100%;
+        align-items: center;
         text-align: center;
     }
     .bay-website ul a img{
@@ -281,24 +299,24 @@ body{
         width: 100%;
         margin: (100% - 1rem);
     }
-    .nav-item{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
+    /* nav styles */
+    .nav-title{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .title h3{
+        font-size: 1rem;
     }
     .nav-item li a{
-        width: 50px;
+        font-size: .8rem;
     }
+
+
     .banner1{
         flex-direction: column-reverse;
         margin: 0;
         padding: 0;
         text-align: center;
-    }
-    .title{
-        display: none;
     }
     .banner2 ul {
         margin: 1rem;
