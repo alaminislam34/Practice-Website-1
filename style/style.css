@@ -92,7 +92,7 @@ nav ul, a{
 
 .banner3{
     width: 100%;
-    margin: 1rem 1rem;
+    /* margin: 1rem 1rem; */
 }
 .banner3-items{
     display: grid;
