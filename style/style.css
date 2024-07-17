@@ -125,6 +125,32 @@ body{
 
 }
 
+/* banner4 styles */
+.banner4{
+    margin: 100px 165px;
+}
+.banner4-item{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.content h2{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.banner4-item .content button{
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #ffffff;
+    margin-top: 1rem;
+}
+.content button a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+
 
 @media screen and (max-width: 576px) {
 
@@ -138,6 +164,9 @@ body{
         padding: 0;
         align-items: center;
         margin: 0px;
+    }
+    .title{
+        display: none;
     }
     .banner1-title{
         width: 100%;
@@ -186,6 +215,27 @@ body{
         grid-template-columns: 1fr;
         margin: 0;
     }
+    .banner4{
+        margin: 2rem;
+        text-align: center;
+    }
+    .banner4-item .image img{
+        width: 100%;
+    }
+    .banner4-item{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .banner4-item .content{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+
 }
 @media screen and (min-width: 576px) and (max-width: 990px) {
     .banner1, .banner2, .banner3{
@@ -222,4 +272,15 @@ body{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+    .banner4{
+        margin: 2rem;
+        width: 100%;
+    }
+    .banner4-item{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+
 }
